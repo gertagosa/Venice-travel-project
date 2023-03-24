@@ -15,6 +15,7 @@ body {
 section {
   max-width: 1200px;
   margin: 0 auto;
+  grid-gap: 64px;
 }
 
 header {
@@ -83,7 +84,6 @@ footer p {
   font-size: 16px;
   line-height: 24px;
   opacity: 0, 9;
-  margin-right: 20px;
 }
 footer li {
   list-style: none;
