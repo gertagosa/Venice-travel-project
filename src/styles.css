@@ -28,9 +28,16 @@ body {
 }
 
 .card {
-  background-color: white;
+  background: white;
   margin: 30px 0;
   padding: 16px;
+}
+
+.card-header.grid {
+  grid-gap: 0;
+}
+.embed {
+  width: 100%;
 }
 
 .card-body {
@@ -53,7 +60,7 @@ body {
 }
 
 section {
-  max-width: 100%;
+  width: 100%;
   margin: 0 auto;
   padding: 100px;
 }
@@ -213,5 +220,11 @@ footer a {
 
   section {
     padding: 30px;
+  }
+  .card-heade img {
+    display: none;
+  }
+  .embed {
+    aspect-ratio: 16/9;
   }
 }
