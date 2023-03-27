@@ -36,6 +36,17 @@ body {
 .card-header.grid {
   grid-gap: 0;
 }
+
+.video-embeds {
+  display: flex;
+  justify-content: center;
+}
+.video {
+  aspect-ratio: 1 / 1;
+
+  margin-top: 30px;
+}
+
 .embed {
   width: 100%;
 }
