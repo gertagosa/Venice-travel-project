@@ -1,6 +1,6 @@
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #272044;
+  background: #272044;
 }
 
 .container {
@@ -8,17 +8,24 @@ body {
   margin: 0 auto;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .grid {
   display: grid;
   grid-gap: 64px;
 }
+
+.img-responsive {
+  width: 100%;
+  display: block;
+}
+
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
 }
-.img-responsive {
-  max-width: 100%;
-  display: block;
-}
+
 .grid-3-columns {
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -27,32 +34,30 @@ body {
   grid-template-columns: 1fr 2fr 2fr;
 }
 
+.embed {
+  width: 100%;
+  aspect-ratio: 1 /1;
+}
+
+.instagram-embeds {
+  margin: 30px 0;
+}
+
 .card {
   background: white;
   margin: 30px 0;
-  padding: 16px;
 }
 
 .card-header.grid {
   grid-gap: 0;
 }
 
-.video-embeds {
-  display: flex;
-  justify-content: center;
-}
-.video {
-  aspect-ratio: 1 / 1;
-
-  margin-top: 30px;
-}
-
-.embed {
-  width: 100%;
-}
-
 .card-body {
-  padding: 32px;
+  padding: 30px;
+}
+
+.card-footer {
+  padding: 0 30px 30px;
 }
 
 .btn {
@@ -67,42 +72,42 @@ body {
   padding: 16px;
   background-color: #462cb3;
   text-decoration: none;
-  margin: 30px 30px 10px;
 }
 
 section {
-  width: 100%;
+  max-width: 100%;
   margin: 0 auto;
   padding: 100px;
 }
+
 section.secondary {
-  background-color: #f8f8f8;
-}
-.text-center {
-  text-align: center;
+  background: #f8f8f8;
 }
 
 header {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../images/Grand-Canal-in-Venice-.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  text-align: center;
   color: white;
+  text-align: center;
   padding: 200px 0;
 }
+
 header h1 {
   font-weight: 700;
   font-size: 96px;
   line-height: 1;
   margin: 30px 0;
 }
+
 header h2 {
   font-weight: 400;
   font-size: 40px;
   line-height: 1.5;
   margin: 0;
 }
+
 header h3 {
   font-weight: 900;
   font-size: 24px;
@@ -116,14 +121,14 @@ header a {
   font-size: 14px;
   line-height: 1.5;
   text-align: center;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  background-color: white;
-  text-decoration: none;
   color: #272044;
   padding: 16px 32px;
   margin-top: 32px;
   display: inline-block;
+  letter-spacing: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: white;
 }
 
 main {
@@ -148,12 +153,13 @@ main h3 {
   color: #272044;
   margin: 0;
 }
+
 main h4 {
   font-weight: 700;
   font-size: 24px;
   line-height: 1;
   color: #272044;
-  margin: 30px 0;
+  margin: 0;
 }
 
 main h5 {
@@ -169,7 +175,6 @@ main p {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-
   color: #272044;
   opacity: 0.7;
 }
@@ -177,13 +182,15 @@ main p {
 footer {
   color: white;
   background-image: linear-gradient(
-      rgba(39, 32, 58, 0.9),
-      rgba(39, 32, 58, 0.9)
+      rgba(39, 32, 68, 0.9),
+      rgba(39, 32, 68, 0.9)
     ),
     url("../images/gondola.jpg");
+
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 footer h3 {
   font-weight: 700;
   font-size: 20px;
@@ -193,18 +200,20 @@ footer h3 {
 footer p {
   font-weight: 400;
   font-size: 16px;
+  opacity: 0.7;
   line-height: 24px;
-  opacity: 0, 9;
 }
+
+footer ul {
+  padding: 0;
+}
+
 footer li {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-footer ul {
-  padding: 0;
-}
 footer a {
   color: white;
   opacity: 0.7;
@@ -218,12 +227,15 @@ footer a {
   header h1 {
     font-size: 48px;
   }
+
   header h2 {
     font-size: 20px;
   }
+
   header h3 {
     font-size: 12px;
   }
+
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 32px;
@@ -232,10 +244,12 @@ footer a {
   section {
     padding: 30px;
   }
-  .card-heade img {
+
+  .card-header img {
     display: none;
   }
+
   .embed {
-    aspect-ratio: 16/9;
+    aspect-ratio: 16 / 9;
   }
 }
